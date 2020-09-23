@@ -42,7 +42,6 @@ export default {
   height: 100vh;
   width: 50px;
   text-align: center;
-  align: justify-content;
   z-index: 999;
   background: green;
 }
