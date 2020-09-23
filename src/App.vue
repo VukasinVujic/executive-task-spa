@@ -1,9 +1,7 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-
+    <Header></Header>
     <HelloWorld msg="Welcome to Your Vue.js App" />
-
     <!-- <font-awesome-icon icon="user" />
     <font-awesome-icon icon="comment" />
     <font-awesome-icon icon="bolt" />
@@ -20,7 +18,6 @@
     <font-awesome-icon icon="power-off" />
     <font-awesome-icon icon="credit-card" />
 
-    <font-awesome-icon icon="search" />
     <font-awesome-icon icon="user" />
     <font-awesome-icon icon="comment" />
     <font-awesome-icon icon="bolt" />
@@ -127,6 +124,7 @@
 import HelloWorld from "./components/HelloWorld.vue";
 import Burger from "./components/Burger.vue";
 import Sidebar from "./components/Sidebar.vue";
+import Header from "./components/Header.vue";
 
 export default {
   name: "App",
@@ -134,18 +132,20 @@ export default {
     HelloWorld,
     Burger,
     Sidebar,
+    Header,
   },
 };
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 .sidebar-panel {
@@ -202,7 +202,7 @@ ul.sidebar-panel-nav > li a {
   height: 90px;
 }
 
-.svg-inline--fa {
+ul.sidebar-panel-nav .svg-inline--fa {
   color: #ff1493;
 }
 </style>

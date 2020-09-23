@@ -45,6 +45,9 @@ library.add(
   faTrophy,
   faHeart
 );
+import Dropdown from "bp-vuejs-dropdown";
+
+Vue.use(Dropdown);
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 Vue.config.productionTip = false;
