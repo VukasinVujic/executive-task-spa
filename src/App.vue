@@ -3,7 +3,8 @@
     <img alt="Vue logo" src="./assets/logo.png" />
 
     <HelloWorld msg="Welcome to Your Vue.js App" />
-    <font-awesome-icon icon="user" />
+
+    <!-- <font-awesome-icon icon="user" />
     <font-awesome-icon icon="comment" />
     <font-awesome-icon icon="bolt" />
     <font-awesome-icon icon="reply-all" />
@@ -27,17 +28,30 @@
 
     <font-awesome-icon icon="ellipsis-h" />
     <font-awesome-icon icon="trophy" />
-    <font-awesome-icon icon="heart" />
+    <font-awesome-icon icon="heart" /> -->
+
+    <Sidebar id="sidebar">
+      <Burger></Burger>
+      <ul class="sidebar-panel-nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </Sidebar>
   </div>
 </template>
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
+import Burger from "./components/Burger.vue";
+import Sidebar from "./components/Sidebar.vue";
 
 export default {
   name: "App",
   components: {
     HelloWorld,
+    Burger,
+    Sidebar,
   },
 };
 </script>
@@ -50,5 +64,18 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+ul.sidebar-panel-nav {
+  list-style-type: none;
+}
+
+ul.sidebar-panel-nav > li > a {
+  margin-left: 30px;
+  color: black;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: block;
+  padding-bottom: 0.5em;
 }
 </style>
