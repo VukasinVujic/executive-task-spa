@@ -65,7 +65,7 @@ export default {
   height: 100vh;
   z-index: 998;
   padding: 3rem 20px 2rem 20px;
-  width: 32px;
+  width: 40px;
 }
 .sidebar-opened {
   /* transform: translateX(100%); */

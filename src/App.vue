@@ -31,11 +31,93 @@
     <font-awesome-icon icon="heart" /> -->
 
     <Sidebar id="sidebar">
-      <Burger></Burger>
+      <!-- <Burger> </Burger> -->
+      <img src="https://iamneverfar.com/images/logo.png" />
       <ul class="sidebar-panel-nav">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li>
+          <Burger
+            ><a href="#home"
+              ><font-awesome-icon icon="reply-all" /><span
+                >Collapse Menu</span
+              ></a
+            ></Burger
+          >
+        </li>
+        <li>
+          <a href="#home"
+            ><font-awesome-icon icon="list-alt" /><span>Timeline</span></a
+          >
+        </li>
+        <li>
+          <a href="#home"
+            ><font-awesome-icon icon="newspaper" /><span>Newsfeed</span></a
+          >
+        </li>
+        <li>
+          <a href="#home"
+            ><font-awesome-icon icon="users" /><span>Family Circles</span></a
+          >
+        </li>
+        <li>
+          <a href="#home"
+            ><font-awesome-icon icon="volume-up" /><span
+              >Audio Messages</span
+            ></a
+          >
+        </li>
+        <li>
+          <a href="#home"
+            ><font-awesome-icon icon="pencil-alt" /><span
+              >Written Messages</span
+            ></a
+          >
+        </li>
+        <li>
+          <a href="#home"
+            ><font-awesome-icon icon="image" /><span>Photos</span></a
+          >
+        </li>
+        <li>
+          <a href="#home"
+            ><font-awesome-icon icon="video" /><span>Videos</span></a
+          >
+        </li>
+        <li>
+          <a href="#home"
+            ><font-awesome-icon icon="clock" /><span>Scheduled Posts</span></a
+          >
+        </li>
+        <li>
+          <a href="#home"
+            ><font-awesome-icon icon="credit-card" /><span>Billing</span></a
+          >
+        </li>
+        <li>
+          <a href="#home"
+            ><font-awesome-icon icon="power-off" /><span>Log Out</span></a
+          >
+        </li>
+
+        <!--
+        <li><a href="#home"><font-awesome-icon icon="user" /></a></li>
+        <li><a href="#home"><font-awesome-icon icon="comment" /></a></li>
+        <li><a href="#home"><font-awesome-icon icon="bolt" /></a></li>
+        <li><a href="#home"><font-awesome-icon icon="image" /></a></li>
+
+        <li><a href="#home"><font-awesome-icon icon="clock" /></a></li>
+        <li><a href="#home"><font-awesome-icon icon="power-off" /></a></li>
+        <li><a href="#home"><font-awesome-icon icon="credit-card" /></a></li>
+
+        <li><a href="#home"><font-awesome-icon icon="search" /></a></li>
+        <li><a href="#home"><font-awesome-icon icon="user" /></a></li>
+        <li><a href="#home"><font-awesome-icon icon="comment" /></a></li>
+        <li><a href="#home"><font-awesome-icon icon="bolt" /></a></li>
+        <li><a href="#home"><font-awesome-icon icon="angle-down" /></a></li>
+
+        <li><a href="#home"><font-awesome-icon icon="ellipsis-h" /></a></li>
+        <li><a href="#home"><font-awesome-icon icon="trophy" /></a></li>
+        <li><a href="#home"><font-awesome-icon icon="heart" /></a></li>
+        -->
       </ul>
     </Sidebar>
   </div>
@@ -66,16 +148,61 @@ export default {
   margin-top: 60px;
 }
 
-ul.sidebar-panel-nav {
-  list-style-type: none;
+.sidebar-panel {
+  padding-top: 10px;
+  overflow-x: hidden;
 }
 
-ul.sidebar-panel-nav > li > a {
+ul.sidebar-panel-nav {
+  list-style-type: none;
+  text-align: left;
+  margin-left: 0;
+  padding-left: 0;
+  padding-bottom: 30px;
+  overflow-x: hidden;
+}
+
+ul.sidebar-panel-nav > li {
+  padding-top: 1.4rem;
+
+  overflow-x: hidden;
+}
+
+ul.sidebar-panel-nav > li a > span {
+  display: inline;
   margin-left: 30px;
+  overflow-x: hidden;
+  color: #ff1493;
+}
+
+ul.sidebar-panel-nav > li a {
+  margin-left: 0px;
   color: black;
   text-decoration: none;
   font-size: 1.5rem;
   display: block;
   padding-bottom: 0.5em;
+  margin-left: 0;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+/* This is sidebar */
+.sidebar-panel,
+.sidebar-opened {
+  background: white;
+}
+
+/* .sidebar-panel { */
+/* width: 30px; */
+/* } */
+
+.sidebar-panel > img {
+  margin-left: 60px;
+  height: 90px;
+}
+
+.svg-inline--fa {
+  color: #ff1493;
 }
 </style>
