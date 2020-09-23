@@ -1,60 +1,62 @@
 <template>
   <div class="container">
     <div class="seach-container">
-      <span>Search <font-awesome-icon icon="search" /> </span>
+      <span>
+        Search
+        <font-awesome-icon icon="search" />
+      </span>
     </div>
     <div class="header-icons">
       <button class="btn-container">
         <Dropdown :is-icon="false" class="dropDown-icon">
-          <template class="dropDown-icon" slot="btn"
-            ><font-awesome-icon icon="user"
-          /></template>
+          <template class="dropDown-icon" slot="btn">
+            <font-awesome-icon icon="user" />
+          </template>
           <template slot="body">
             <ul>
               <li v-for="i in [1, 2, 3, 4, 5]" v-bind:key="i">
-                <label> item {{ i }} </label>
+                <label>item {{ i }}</label>
               </li>
             </ul>
           </template>
         </Dropdown>
       </button>
-
-      <button class="btn-container">
-        <Dropdown :is-icon="false" class="dropDown-icon">
-          <template class="dropDown-icon" slot="btn"
-            ><font-awesome-icon icon="comment"
-          /></template>
-          <template slot="body">
-            <ul>
-              <li v-for="i in [1, 2, 3, 4, 5]" v-bind:key="i">
-                <label> item {{ i }} </label>
-              </li>
-            </ul>
-          </template>
-        </Dropdown>
-      </button>
-
-      <button class="btn-container">
-        <Dropdown :is-icon="false" class="dropDown-icon">
-          <template class="dropDown-icon" slot="btn"
-            ><font-awesome-icon icon="bolt"
-          /></template>
-          <template slot="body">
-            <ul>
-              <li v-for="i in [1, 2, 3, 4, 5]" v-bind:key="i">
-                <label> item {{ i }} </label>
-              </li>
-            </ul>
-          </template>
-        </Dropdown>
-      </button>
-
-      <img :src="image" alt="" />
-      <span>James Siegel</span>
 
       <button class="btn-container">
         <Dropdown :is-icon="false" class="dropDown-icon">
           <template class="dropDown-icon" slot="btn">
+            <font-awesome-icon icon="comment" />
+          </template>
+          <template slot="body">
+            <ul>
+              <li v-for="i in [1, 2, 3, 4, 5]" v-bind:key="i">
+                <label>item {{ i }}</label>
+              </li>
+            </ul>
+          </template>
+        </Dropdown>
+      </button>
+
+      <button class="btn-container">
+        <Dropdown :is-icon="false" class="dropDown-icon">
+          <template class="dropDown-icon" slot="btn">
+            <font-awesome-icon icon="bolt" />
+          </template>
+          <template slot="body">
+            <ul>
+              <li v-for="i in [1, 2, 3, 4, 5]" v-bind:key="i">
+                <label>item {{ i }}</label>
+              </li>
+            </ul>
+          </template>
+        </Dropdown>
+      </button>
+
+      <button class="btn-container">
+        <Dropdown :is-icon="false" class="dropDown-icon">
+          <template class="dropDown-icon" slot="btn">
+            <img :src="image" alt />
+            <span>James Siegel</span>
             <font-awesome-icon icon="angle-down" />
           </template>
           <template slot="body">
@@ -74,7 +76,7 @@ export default {
   name: "Header",
   data: function() {
     return {
-      image: image,
+      image: image
     };
   },
   methods: {
@@ -84,11 +86,11 @@ export default {
       } else {
         console.log("You are still online");
       }
-    },
+    }
   },
   components: {
-    Dropdown,
-  },
+    Dropdown
+  }
 };
 </script>
 
@@ -97,6 +99,10 @@ export default {
   display: inline-block;
   background: #ff1493;
   width: 100vw;
+}
+
+.container .svg-inline--fa {
+  color: white;
 }
 
 .seach-container {
